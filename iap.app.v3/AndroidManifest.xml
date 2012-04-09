@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iap.app.v3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:name="iap.app.AndroidTabLayoutActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+                <!--  Photos Activity -->
+        <activity android:name="iap.app.HomeActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        
+        <!--  Photos Activity -->
+        <activity android:name="iap.app.NewsActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        
+        <!--  Songs Activity -->
+        <activity android:name="iap.app.DownloadsActivity" 
+            android:configChanges="keyboardHidden|orientation"/>
+        
+        <!--  Videos Activity -->
+        <activity android:name="iap.app.ForumActivity" 
+            android:configChanges="keyboardHidden|orientation"/>
+        
+        <!--  Photos Activity -->
+        <activity android:name="iap.app.ContactActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        
+        <!--  Photos Activity -->
+        <activity android:name="iap.app.DonateActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        
+                <!--  Photos Activity -->
+        <activity android:name="iap.app.ExitActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        
+                <activity android:name="iap.app.SplashScreen"
+                    android:theme="@style/Theme.Transparent" >
+                           
+            <intent-filter>  
+                <action android:name="android.intent.action.MAIN"></action>  
+                <category android:name="android.intent.category.LAUNCHER"></category>  
+            </intent-filter>  
+        </activity>  
+
+    </application>
+</manifest>
